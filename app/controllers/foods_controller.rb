@@ -1,6 +1,15 @@
 class FoodsController < ApplicationController
   before_action :set_food, only: [:show, :edit, :update, :destroy]
 
+
+  def meat 
+    @foods = Food.all
+  end
+  
+  def soup 
+    @foods = Food.all
+  end
+
   # GET /foods
   # GET /foods.json
   def index
