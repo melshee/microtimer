@@ -13,12 +13,13 @@
 
   <tbody>
     <% @foods.each do |food| %>
+      <% foodimage = food.name + ".jpg" %>
       <tr>
         <td><%= food.name %></td>
         <td><%= food.category %></td>
         <td><%#= food.time %></td>
         <td><%#= link_to 'Show', food %></td>
-        <td><%= link_to image_tag("chicken.jpg", :alt => "image"), food %></td>
+        <td><%= link_to image_tag(foodimage, :alt => "image"), food %></td>
         <td><%#= link_to 'Edit', edit_food_path(food) %></td>
         <td><%#= link_to 'Destroy', food, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
