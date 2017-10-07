@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+@import 'bootstrap';
+@import 'foods.scss';
+@import 'header.scss'; 
+@import url(https://fonts.googleapis.com/css?family=Hind);
+
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	padding-bottom: 50px;
+}
+
+.notice, .alert {
+	text-align: center;
+	opacity: 0.8;
+	padding: 0;
+	margin: 0;
+}
+
+#toast-container {
+	left: 50%;
+	transform: translateX(-50%);
+	top: 150px;
+}
+.p {
+ font-family: 'Hind';
+}
