@@ -25,3 +25,9 @@ lobster_bisque.name = "lobster bisque"
 lobster_bisque.time = 115
 lobster_bisque.category = "soup"
 lobster_bisque.save
+
+spinach = Food.create
+spinach.name = "spinach"
+spinach.time = 35
+spinach.category = "vegetables"
+spinach.save
