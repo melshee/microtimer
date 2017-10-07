@@ -15,5 +15,6 @@
   <%= @food.time %>
 </p>
 
-<%= link_to 'Edit', edit_food_path(@food) %> |
-<%= link_to 'Back', foods_path %>
+
+<%= link_to 'Back', controller: "foods", action: @food.category %>
+<%= link_to 'Home', foods_path %>
