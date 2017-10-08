@@ -33,7 +33,7 @@ spinach.category = "vegetables"
 spinach.save
 
 chao_mian = Food.create
-chao_mian.name = "chao mian"
+chao_mian.name = "chow mien"
 chao_mian.category = "grain"
 chao_mian.time = 90
 chao_mian.save
