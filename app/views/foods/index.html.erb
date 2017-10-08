@@ -5,20 +5,50 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Category</th>
+      <!--<th>Name</th>-->
+      <!--<th>Category</th>-->
       <!--<th>Time</th>-->
-      <th colspan="3"></th>
+      <!--<th colspan="3"></th>-->
     </tr>
   </thead>
 
   <tbody>
 
       <tr>
-        <td><%= link_to 'Meats', controller: "foods", action: "meat" %></td>
-        <td><%= link_to 'Vegetables', controller: "foods", action: "vegetables" %></td>
-        <td><%= link_to 'Soup', controller: "foods", action: "soup" %></td>
-        <td><%= link_to 'Grains', controller: "foods", action: "grain" %></td>
+        <td>
+          <figure>
+            <%= link_to image_tag("meat.png", :alt => "image"), controller: "foods", action: "meat" %>
+            <figcaption>
+              <%= link_to 'Meats', controller: "foods", action: "meat" %>
+            </figcaption>
+          </figure>
+        </td>
+        <td>
+          <figure>
+            <%= link_to image_tag("soup.png", :alt => "image"), controller: "foods", action: "soup" %>
+            <figcaption>
+              <%= link_to 'Soup', controller: "foods", action: "soup" %>
+            </figcaption>
+          </figure>
+        </td>
+      </tr>
+        
+      <tr>
+        <td>
+          <figure>
+            <%= link_to image_tag("vegetable.PNG", :alt => "image"), controller: "foods", action: "vegetables"  %>
+            <figcaption>
+              <%= link_to 'Vegetables', controller: "foods", action: "vegetables" %>
+            </figcaption>
+          </figure>
+        </td>
+        <td>
+          <figure>
+            <%= link_to image_tag("grain.PNG", :alt => "image"), controller: "foods", action: "grain" %>
+            <figcaption>
+              <%= link_to 'Grains', controller: "foods", action: "grain" %>
+            </figcaption>
+          </figure>
       </tr>
   </tbody>
 </table>
