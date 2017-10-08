@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   
   
   get '/meat', to: 'foods#meat'
-  
+  get '/veg', to: 'foods#vegetables'
   get '/soup', to: 'foods#soup'
+  get '/grain', to: 'foods#grain'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
