@@ -16,5 +16,26 @@
 </p>
 
 
+<% videos = { 
+           45 => "https://www.youtube.com/embed/DuWf6MTOAz0?autoplay=1", 
+           50 => "https://www.youtube.com/embed/FkCSO0c7-CM?autoplay=1", 
+           87 => "https://www.youtube.com/embed/8Z2eWpT30Q4?autoplay=1"
+} %>
+
+<% @curr_video = "https://www.youtube.com/embed/3E0KHCUEHAQ?autoplay=1" %>
+<% @curr_length = 6 %>
+
+<% videos.each do |length, src| %>
+
+  <!--puts src-->
+  <% if( length <= @food.time && length > @curr_length) %>
+    <% @curr_video = src %>
+    <% @curr_length = length %>
+  <% end %>
+<% end %>
+
+<iframe width="560" height="315" src=<%= @curr_video %> /> frameborder="0" allowfullscreen></iframe>
+<br>
+
 <%= link_to 'Back', controller: "foods", action: @food.category %>
 <%= link_to 'Home', foods_path %>
