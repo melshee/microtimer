@@ -1,7 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>TimeToEat</h1>
-<h3>I am microwaving..</h3>
+<%= image_tag("Logo.png", :alt => "logo") %>
 
 <table>
   <thead>
@@ -14,7 +13,7 @@
   </thead>
 
   <tbody>
-
+    <tr>
       <tr>
         <td>
           <figure>
@@ -31,6 +30,19 @@
               <%= link_to 'Soup', controller: "foods", action: "soup" %>
             </figcaption>
           </figure>
+        </td>
+        <td>
+        
+          <p>Have you ever stared at the microwave impatiently, waiting for your food to be done?
+          Have you ever overheated your food causing you to drop it on the floor and waste $20?
+          Well, with Time2Eat, you'll know exactly how much time to heat your food
+          and you'll be entertained in the mean time!
+          <br>
+          <br>
+          <br>
+          Time2Eat provides you with the proper heating times for whatever food you need, 
+          and it provides you with a video tailored to your heating time. 
+          </p>
         </td>
       </tr>
         
@@ -51,6 +63,7 @@
             </figcaption>
           </figure>
       </tr>
+    </tr
   </tbody>
 </table>
 

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  root 'foods#index'
   resources :foods
+  root 'foods#index'
+  
   
   get '/meat', to: 'foods#meat'
   get '/veg', to: 'foods#vegetables'
