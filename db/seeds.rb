@@ -29,7 +29,7 @@ lobster_bisque.save
 spinach = Food.create
 spinach.name = "spinach"
 spinach.time = 35
-spinach.category = "vegetable"
+spinach.category = "vegetables"
 spinach.save
 
 chao_mian = Food.create
