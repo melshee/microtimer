@@ -16,13 +16,13 @@ chicken.save
 
 beef = Food.create
 beef.name = "beef"
-beef.time = 50
+beef.time = 130
 beef.category = "meat"
 beef.save
 
 lobster_bisque = Food.create
 lobster_bisque.name = "lobster bisque"
-lobster_bisque.time = 115
+lobster_bisque.time = 110
 lobster_bisque.category = "soup"
 lobster_bisque.save
 
