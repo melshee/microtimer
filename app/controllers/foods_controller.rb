@@ -6,7 +6,7 @@ class FoodsController < ApplicationController
     @foods = Food.all
   end
   
-  def veg 
+  def vegetables 
     @foods = Food.all
   end
   

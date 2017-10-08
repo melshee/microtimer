@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   
   
   get '/meat', to: 'foods#meat'
-  get '/veg', to: 'foods#veg'
+  get '/veg', to: 'foods#vegetables'
   get '/soup', to: 'foods#soup'
   get '/grain', to: 'foods#grain'
 
