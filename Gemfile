@@ -38,8 +38,6 @@ group :development, :test do
   gem 'byebug'
   
   gem 'sqlite3'
-  
-  gem 'pg'
 end
 
 group :development do
@@ -50,3 +48,4 @@ group :development do
   gem 'spring'
 end
 
+gem 'pg', group: :production
