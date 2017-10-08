@@ -39,7 +39,7 @@
 <% @curr_video = "https://www.youtube.com/embed/3E0KHCUEHAQ?autoplay=1" %>
 <% @curr_length = 6 %>
 
-<% if @food.category == "meat" %>
+<% if @food.category == "meat" || @food.category == "grain" %>
 <%= link_to 'The USDA reccommends you consume 2 1/2 cups of vegetables per day. Wanna warm some up :)?!', controller: "foods", action: "vegetables"  %>
 <br>
 <br>
