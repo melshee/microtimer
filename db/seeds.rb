@@ -75,7 +75,7 @@ bacon.time = 45
 bacon.save
 
 mysteryMeat = Food.create
-mysteryMeat.name = 'mystery meat'
+mysteryMeat.name = 'spam'
 mysteryMeat.category = 'meat'
 mysteryMeat.time = 120
 mysteryMeat.save
@@ -87,7 +87,7 @@ oatmeal.time = 100
 oatmeal.save
 
 chickenorvegetablesoup = Food.create
-chickenorvegetablesoup.name = 'chicken/vegetable soup'
+chickenorvegetablesoup.name = 'chicken soup'
 chickenorvegetablesoup.category = 'soup'
 chickenorvegetablesoup.time = 120
 chickenorvegetablesoup.save
