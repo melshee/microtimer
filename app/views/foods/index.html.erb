@@ -20,10 +20,10 @@
       </tr>
         
       <tr>
-        <td><%#= link_to 'Vegetables',  %></td>
         <td><%= link_to image_tag("soup.png", :alt => "image") %></td>
+        <td><%= link_to 'Vegetables', controller: "foods", action: "vegetables" %></td>
         <td><%= link_to 'Soup', controller: "foods", action: "soup" %></td>
-        <td><%#= link_to 'Grains', b %></td>
+        <td><%= link_to 'Grains', controller: "foods", action: "grain" %></td>
       </tr>
   </tbody>
 </table>
