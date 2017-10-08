@@ -14,7 +14,7 @@
   <tbody>
     <% @foods.each do |food| %>
       <% foodimage = food.name + ".jpg" %>
-      <% if food.category == "vegetable" %>
+      <% if food.category == "vegetables" %>
           <tr>
             <td><%= food.name %></td>
             <td><%= food.category %></td>
