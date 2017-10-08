@@ -7,7 +7,18 @@
 
 <p>
   <strong>Time:</strong>
-  <%= @food.time %>
+  <% if @food.time < 59 %>
+    <%= @food.time %> seconds
+  <% else %>  
+    <% min = @food.time / 60 %>
+    <% seconds = @food.time % 60 %>
+    
+      <% if seconds == 0 %>
+        <%= min %> minutes
+     <% else %>
+       <%= min %> minutes <%= seconds %> seconds
+      <% end %>
+  <% end %>
 </p>
 
 
@@ -28,6 +39,12 @@
 <% @curr_video = "https://www.youtube.com/embed/3E0KHCUEHAQ?autoplay=1" %>
 <% @curr_length = 6 %>
 
+<% if @food.category == "meat" || @food.category == "grain" %>
+<%= link_to 'The USDA reccommends you consume 2 1/2 cups of vegetables per day. Wanna warm some up :)?!', controller: "foods", action: "vegetables"  %>
+<br>
+<br>
+<% end %>
+
 <% videos.each do |length, src| %>
 
   <!--puts src-->
@@ -39,6 +56,5 @@
 
 <iframe width="560" height="315" src=<%= @curr_video %> /> frameborder="0" allowfullscreen></iframe>
 <br>
-
 <%= link_to 'Back', controller: "foods", action: @food.category %>
 <%= link_to 'Home', foods_path %>
