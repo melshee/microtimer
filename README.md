@@ -1,16 +1,7 @@
+Time2Eat is an amusing platform to aid you in microwaving your food! 
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
-
+Simply pick which food you're heating up and we'll let you know how long to cook it for AND play a video to keep you entertained in the meantime. 
 
 Site: https://gentle-tor-23382.herokuapp.com/
 
-
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+Check out our post on Devpost: https://devpost.com/software/timetoeat
